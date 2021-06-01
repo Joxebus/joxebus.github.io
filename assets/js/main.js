@@ -96,6 +96,16 @@ jQuery(document).ready(function($) {
         }
     );
 
+    $("#latest-youtube-video").rss(
+        "https://www.youtube.com/feeds/videos.xml?channel_id=UCZlRK9pPpcFBZSNpKlaOXqg",
+        {
+            limit: 1,
+            ssl: true,
+            layoutTemplate: '<div class="embed-responsive embed-responsive-16by9 has-ribbon">{entries}</div>',
+            entryTemplate: '<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{url}" allowfullscreen></iframe><div class="ribbon"><div class="text">New</div></div>'
+        }
+    );
+
     $("#rss-feeds-youtube").rss(
 
         //Change this to your own rss feeds
@@ -129,9 +139,6 @@ jQuery(document).ready(function($) {
 
         }
     );
-
-    /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    new GitHubCalendar("#github-graph", "Joxebus");
     
     
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
