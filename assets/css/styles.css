@@ -132,6 +132,23 @@ a.dotted-link:hover {
   border-radius: 50%;
 }
 
+.profile-image:hover {
+  animation: grow 2s;
+}
+
+.project-image:hover {
+  animation: grow 2s;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 .header .profile-content .name {
   color: #49515a;
   font-size: 38px;
