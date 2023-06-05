@@ -12,7 +12,6 @@ $(window).on('load', function() {
 
     new RSS('https://www.youtube.com/feeds/videos.xml?channel_id=UCZlRK9pPpcFBZSNpKlaOXqg',
             "latest-youtube-video",
-            "item",
             new EntryOptions(
                 1,
                 '<div class="embed-responsive embed-responsive-16by9 has-ribbon">{entries}</div>',
@@ -23,7 +22,6 @@ $(window).on('load', function() {
 
     new RSS('https://joxebus.github.io/blog/feed.xml',
             "rss-feeds-blog-github",
-            "item",
             new EntryOptions(
                 3,
                 "<div class='items'>{entries}</div>",
@@ -33,7 +31,6 @@ $(window).on('load', function() {
 
     new RSS('https://groovylopeando.wordpress.com/feed/',
             "rss-feeds-blog",
-            "item",
             new EntryOptions(
                 3,
                 "<div class='items'>{entries}</div>",
@@ -43,7 +40,6 @@ $(window).on('load', function() {
 
     new RSS('https://medium.com/feed/@joxebus',
             "rss-feeds-medium",
-            "item",
             new EntryOptions(
                 3,
                 "<div class='items'>{entries}</div>",
@@ -53,7 +49,6 @@ $(window).on('load', function() {
 
     new RSS('https://www.youtube.com/feeds/videos.xml?channel_id=UCZlRK9pPpcFBZSNpKlaOXqg',
             "rss-feeds-youtube",
-            "item",
             new EntryOptions(
                 5,
                 "<div class='items'>{entries}</div>",

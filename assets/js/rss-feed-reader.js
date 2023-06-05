@@ -17,10 +17,9 @@ class EntryOptions {
 }
 
 class RSS {
-    constructor(url, elementId, selector, entryOptions) {
+    constructor(url, elementId, entryOptions) {
         this.url = url;
         this.elementId = elementId;
-        this.selector = selector;
         this.entryOptions = entryOptions;
     }
 
