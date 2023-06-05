@@ -64,6 +64,10 @@ $(window).on('load', function() {
 
 });
 
+jQuery.htmlPrefilter = function( html ) {
+    return html;
+};
+
 
 jQuery(document).ready(function($) {
 
