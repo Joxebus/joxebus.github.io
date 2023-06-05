@@ -61,32 +61,8 @@ $(window).on('load', function() {
 
             )).renderEntries()
 
-
-});
-
-jQuery.htmlPrefilter = function( html ) {
-    return html;
-};
-
-
-jQuery(document).ready(function($) {
-
-
-    /*======= Skillset *=======*/
-    
-    $('.level-bar-inner').css('width', '0');
-    
-    
-    
-    /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
-    
-    
-    /* jQuery RSS - https://github.com/sdepold/jquery-rss */
-
-    
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
     GitHubActivity.feed({username: "Joxebus", selector: "#ghfeed", limit: 20 });
 
-
 });
+

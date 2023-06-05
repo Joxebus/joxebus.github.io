@@ -685,3 +685,11 @@ a.dotted-link:hover {
     max-width: inherit;
   }
 }
+
+.list-inline-item img {
+  float: none !important;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
