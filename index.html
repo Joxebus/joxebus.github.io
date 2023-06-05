@@ -60,11 +60,16 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 
+    <script type="application/javascript" src="assets/js/rss-feed-reader.js"></script>
+
     <!-- github calendar css -->
     <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
     <!-- github activity css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
+
+    <script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
@@ -775,7 +780,7 @@
                 </div><!--//section-inner-->
             </aside><!--//section-->
 
-            <aside class="blog aside section">
+            <aside class="blog aside section"> <!-- Latest Blog Posts -->
                 <div class="section-inner">
                     <h2 class="heading">Latest Blog Posts</h2>
                     <p>
@@ -790,7 +795,7 @@
                 </div><!--//section-inner-->
             </aside><!--//section-->
 
-            <aside class="blog aside section">
+            <aside class="blog aside section"> <!-- Latest Videos -->
                 <div class="section-inner">
                     <h2 class="heading">Latest Videos</h2>
                     <p>
@@ -824,13 +829,9 @@
 <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.rss.min.js"></script>
 <script type="text/javascript" src="assets/js/custom-jquery.rss.js"></script>
 
-<!-- github activity plugin -->
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-<script type="text/javascript"
-        src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
 <!-- custom js -->
 <script type="text/javascript" src="assets/js/main.js"></script>
 
