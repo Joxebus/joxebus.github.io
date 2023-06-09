@@ -39,9 +39,6 @@ class RSS {
 
     htmlNewVideo(entry) {
         const guid = entry.guid.split(":")[2]
-        console.log("Entry: "+entry)
-        console.log("Entry.guid: "+entry.guid)
-        console.log("GUID: "+guid)
         const entries = this.entryOptions.entryTemplate.replace('{guid}', guid)
         return this.entryOptions.layoutTemplate.replace('{entries}', entries)
     }
