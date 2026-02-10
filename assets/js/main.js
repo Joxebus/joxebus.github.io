@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         new EntryOptions(
             1,
             '<div class="relative w-full pb-[56.25%] h-0 rounded-xl overflow-hidden shadow-lg bg-black">{entries}</div>',
-            '<iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/{guid}" allow="encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            '<iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/{guid}" referrerPolicy="strict-origin-when-cross-origin" allow="encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             true
         )).renderEntries();
 
