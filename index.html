@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JETEGTR3HG"></script>
@@ -15,653 +16,563 @@
         gtag('config', 'G-JETEGTR3HG');
     </script>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Bautista - Software Engineer</title>
-    <!-- Meta -->
+    <meta name="description" content="Profile, technology, articles, videos and portfolio of technology projects">
+    
+    <!-- Open Graph / Meta Tags -->
     <meta property="og:site_name" name="og:site_name" content="Omar Bautista - Software Engineer">
-    <meta property="title" name="title" content="Omar Bautista - Software Engineer">
     <meta property="og:title" name="og:title" content="Omar Bautista - Software Engineer">
     <meta property="og:type" name="og:type" content="website">
     <meta property="og:locale" name="description" content="en_US">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="description" name="description" content="Profile, technology, articles, videos and portfolio of technology projects">
     <meta property="og:description" name="og:description" content="Profile, technology, articles, videos and portfolio of technology projects">
     <meta property="og:url" name="og:url" content="https://joxebus.github.io/">
-    <meta property="al:web:url" name="al:web:url" content="https://joxebus.github.io/">
-    <meta property="article:author" name="article:author" content="https://joxebus.github.io/">
-    <meta property="author" name="author" content="Omar Bautista (@Joxebus)">
-    <meta property="robots" name="robots" content="index,follow,max-image-preview:large">
-    <meta property="name" content="Omar Bautista">
-    <meta property="description" content="Profile, technology, articles, videos and portfolio of technology projects">
-    <meta property="image" name="image" content="https://joxebus.github.io/assets/images/joxebus_profile_site.png">
     <meta property="og:image" name="og:image" content="https://joxebus.github.io/assets/images/joxebus_profile_site.png">
-    <meta property="twitter:card" name="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" name="twitter:title" content="Omar Bautista - Software Engineer">
-    <meta property="twitter:site" name="twitter:site" content="@Joxebus">
-    <meta property="twitter:creator" name="twitter:creator" content="@Joxebus">
-    <meta property="twitter:image" name="twitter:image" content="https://joxebus.github.io/assets/images/joxebus_profile_site.png">
-    <meta property="twitter:image:alt" name="twitter:image:alt" content="This website contains material about technology, articles, presentations and videos.">
-    <meta property="twitter:image:src" name="twitter:image:src" content="https://joxebus.github.io/assets/images/joxebus_profile_site.png">
-    <meta property="twitter:description" name="twitter:description" content="This website contains material about technology, articles, presentations and videos.">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Omar Bautista - Software Engineer">
+    <meta name="twitter:site" content="@Joxebus">
+    <meta name="twitter:creator" content="@Joxebus">
+    <meta name="twitter:image" content="https://joxebus.github.io/assets/images/joxebus_profile_site.png">
+    <meta name="twitter:description" content="This website contains material about technology, articles, presentations and videos.">
 
     <link rel="shortcut icon" href="favicon.ico">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic'
-          rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'
-          type='text/css'>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#475569',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
 
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-
-    <script type="text/javascript"
-            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-
+     <!-- rss reader -->
+    <script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
     <script type="application/javascript" src="assets/js/rss-feed-reader.js"></script>
-
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github activity css -->
+    
+    <!-- Github Activity -->
     <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
     <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
-
-    <script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
-
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
         }
     </script>
-
+     <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </head>
 
-<body>
-<!-- ******HEADER****** -->
-<header class="header">
-    <div class="container clearfix">
-        <img class="profile-image img-fluid float-left"
-             src="https://www.gravatar.com/avatar/d559adb11e15c17cbb045968fa695e76?s=200"
-             alt="Omar Bautista"/>
-        <div class="profile-content float-left">
-            <h1 class="name">Omar Bautista</h1>
-            <h2 class="desc">Software Engineer</h2>
-            <ul class="social list-inline">
-                <li class="list-inline-item">
-                    <a href="https://twitter.com/Joxebus" target="_blank"><i
-                            class="fab fa-twitter"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/joxebus/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://github.com/Joxebus" target="_blank"><i
-                            class="fab fa-github-alt"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://joxebus.github.io/blog/" target="_blank"><i
-                            class="fas fa-blog"></i></a>
-                </li>
-            </ul>
-        </div><!--//profile-->
-        <a class="btn btn-cta-primary float-right" href="mailto:joxebus@gmail.com"
-           target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>
-    </div><!--//container-->
-</header><!--//header-->
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-primary selection:text-white">
 
-<div class="container sections-wrapper">
-    <div class="row">
-        <div class="primary col-lg-8 col-12">
-            <section class="about section">
-                <div class="section-inner">
-                    <h2 class="heading">About Me</h2>
-                    <div class="content">
-                        <p>As a Software Engineer, I am driven by my passion for technology and
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-primary">Omar Bautista</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#experience"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                        <a href="#projects"
+                            class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#content"
+                             class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Content</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button"
+                        class="text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary p-2"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden hidden bg-white border-t" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home"
+                    class="block hover:bg-slate-50 hover:text-primary px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about"
+                    class="block hover:bg-slate-50 hover:text-primary px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#experience"
+                    class="block hover:bg-slate-50 hover:text-primary px-3 py-2 rounded-md text-base font-medium">Experience</a>
+                <a href="#projects"
+                    class="block hover:bg-slate-50 hover:text-primary px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#content"
+                    class="block hover:bg-slate-50 hover:text-primary px-3 py-2 rounded-md text-base font-medium">Content</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="home"
+            class="min-h-screen flex items-center justify-center relative overflow-hidden bg-slate-50 pt-16">
+            <!-- Background Decorations -->
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <div
+                    class="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob">
+                </div>
+                <div
+                    class="absolute top-20 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000">
+                </div>
+                <div
+                    class="absolute -bottom-32 left-1/2 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000">
+                </div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    <!-- Text Content -->
+                    <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
+                        <div
+                            class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-2">
+                            Software Engineer
+                        </div>
+                        <h1
+                            class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 leading-tight">
+                            Hi, I'm <br>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Omar Bautista</span>
+                        </h1>
+                        <p class="text-xl text-slate-600 max-w-lg mx-auto md:mx-0 leading-relaxed">
+                             I am driven by my passion for technology and constantly seek opportunities to expand my skillset.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                            <a href="mailto:joxebus@gmail.com"
+                                class="px-8 py-3.5 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition shadow-lg hover:shadow-blue-500/30 flex items-center justify-center gap-2">
+                                <span>Contact Me</span>
+                                <i class="fas fa-paper-plane text-sm"></i>
+                            </a>
+                            <a href="#about"
+                                class="px-8 py-3.5 bg-white text-slate-700 font-medium rounded-lg border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition flex items-center justify-center gap-2">
+                                <span>Learn More</span>
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </a>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="flex items-center justify-center md:justify-start gap-6 pt-6 text-slate-400">
+                            <a href="https://github.com/Joxebus" target="_blank"
+                                class="hover:text-blue-600 transition-colors transform hover:scale-110 duration-200">
+                                <i class="fab fa-github-alt text-2xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/joxebus/" target="_blank"
+                                class="hover:text-blue-600 transition-colors transform hover:scale-110 duration-200">
+                                <i class="fab fa-linkedin-in text-2xl"></i>
+                            </a>
+                           <a href="https://twitter.com/Joxebus" target="_blank"
+                                class="hover:text-blue-600 transition-colors transform hover:scale-110 duration-200">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="https://joxebus.github.io/blog/" target="_blank"
+                                class="hover:text-blue-600 transition-colors transform hover:scale-110 duration-200">
+                                <i class="fas fa-blog text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image/Visual -->
+                    <div class="w-full md:w-1/2 flex justify-center md:justify-end relative">
+                        <div class="relative w-72 h-72 md:w-96 md:h-96">
+                            <!-- Blob behind image -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] animate-blob opacity-20 transform scale-110">
+                            </div>
+
+                            <!-- Image Container -->
+                            <div
+                                class="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-all duration-300">
+                                <img src="https://www.gravatar.com/avatar/d559adb11e15c17cbb045968fa695e76?s=400"
+                                    alt="Omar Bautista Profile" class="w-full h-full object-cover">
+                            </div>
+
+                             <!-- Floating Badge 1 -->
+                            <div class="absolute -top-6 -right-6 bg-white p-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce"
+                                style="animation-duration: 3s;">
+                                <div
+                                    class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500 font-medium">Developer</p>
+                                    <p class="text-sm font-bold text-slate-900">10+ Years</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-16">
+                     <div class="w-full md:w-1/2 relative space-y-6">
+                        <div class="flex items-center gap-2">
+                             <span class="w-12 h-0.5 bg-blue-600"></span>
+                            <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">About Me</span>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+                             Software <span class="text-blue-600">Engineer</span>
+                        </h2>
+                        <p class="text-slate-600 leading-relaxed">
+                            As a Software Engineer, I am driven by my passion for technology and
                             constantly seek opportunities to expand my skillset. Currently, my
                             expertise encompasses a range of technologies including Java, Spring,
                             Spring Boot, Groovy, Grails, Hibernate, Jenkins, Docker, Unit and
                             Integration Testing, Spock Framework, and Relational Databases, among
                             others.
                         </p>
-                        <p>
+                        <p class="text-slate-600 leading-relaxed">
                             In addition to my technical proficiency, I have gained valuable
                             experience collaborating with both remote and on-site teams. I strongly
                             believe in the power of knowledge sharing and actively engage in
                             exchanging insights with my peers, fostering a culture of continuous
                             self-improvement.
                         </p>
-                        <p>
-                            To showcase my work and expertise, I maintain an active presence on
-                            GitHub. I have personally curated a collection of workshop examples,
-                            demonstrating my ability to deliver informative and engaging sessions.
-                            While some of the repositories may be outdated, I deliberately retain
-                            them as they serve as a testament to my growth mindset and my eagerness
-                            to learn from my past mistakes.</p>
 
+                        <div class="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
+                             <!-- Skills Images -->
+                             <img src="assets/images/icons/Java-Light.svg" alt="Java" class="h-10 hover:scale-110 transition-transform"/>
+                             <img src="assets/images/icons/Spring-Light.svg" alt="Spring" class="h-10 hover:scale-110 transition-transform"/>
+                             <img src="assets/images/icons/spring-boot.png" alt="Spring Boot" class="h-10 hover:scale-110 transition-transform"/>
+                             <img src="assets/images/icons/Git.svg" alt="Git" class="h-10 hover:scale-110 transition-transform"/>
+                             <img src="assets/images/icons/Groovy_light.png" alt="Groovy" class="h-10 hover:scale-110 transition-transform"/>
+                             <img src="assets/images/icons/Grails.png" alt="Grails" class="h-10 hover:scale-110 transition-transform"/>
+                             <img src="assets/images/icons/AWS-Light.svg" alt="AWS" class="h-10 hover:scale-110 transition-transform"/>
+                             <img src="assets/images/icons/Docker.svg" alt="Docker" class="h-10 hover:scale-110 transition-transform"/>
+                             <img src="assets/images/icons/Maven-Light.svg" alt="Maven" class="h-10 hover:scale-110 transition-transform"/>
+                             <img src="assets/images/icons/Gradle-Light.svg" alt="Gradle" class="h-10 hover:scale-110 transition-transform"/>
+                        </div>
+                    </div>
+                     <div class="w-full md:w-1/2 relative">
+                         <!-- GitHub Activity Feed Placeholder -->
+                          <div id="ghfeed" class="ghfeed w-full"></div>
+                     </div>
+                </div>
+            </div>
+        </section>
 
-                        <ul class="social list-inline"> <!-- Skillset with images -->
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/Java-Light.svg" alt="Java"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/Spring-Light.svg"
-                                     alt="Spring"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/spring-boot.png"
-                                     alt="Spring Boot"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/Git.svg"
-                                     alt="Git, Github, Version Control"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/Groovy_light.png"
-                                     alt="Groovy lang"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/Grails.png"
-                                     alt="Grails Framework"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/AWS-Light.svg"
-                                     alt="AWS, S3, API Gateway, Serverless"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/Docker.svg"
-                                     alt="Docker"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/Maven-Light.svg"
-                                     alt="Maven"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/Gradle-Light.svg"
-                                     alt="Gradle"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/Angular-Light.svg"
-                                     alt="Angular"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/JavaScript.svg"
-                                     alt="Javascript"/>
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="assets/images/icons/TypeScript.svg"
-                                     alt="TypeScript"/>
-                            </li>
-                        </ul>
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">Career Path</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Work Experience</h2>
+                    <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+                </div>
 
+                <div class="max-w-4xl mx-auto relative">
+                    <!-- Vertical Line -->
+                    <div
+                        class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-slate-200">
+                    </div>
 
-
-                    </div><!--//content-->
-                </div><!--//section-inner-->
-            </section><!--//section-->
-
-            <section class="latest section">
-                <div class="section-inner">
-                    <h2 class="heading">Workshops and Talks</h2>
-                    <div class="content">
-
-
-                        <div class="item featured text-center">
-
-                            <h3 class="title"><a
-                                    href="https://www.youtube.com/user/Joxebus/videos?view_as=subscriber"
-                                    target="_blank">YouTube Channel - Latest video</a></h3>
-                            <p class="summary">
-                                You can see my latest video from YouTube here, I try to upload one video every week
-                                if you like my content please subscribe and share, so I can reach more people.
-                            </p>
-                            <div id="latest-youtube-video">
-
-                            </div>
-
-                            <div class="desc text-left">
-                                <p>
-                                    This is my recent project and at this moment I'm creating content about
-                                    Groovy language, but I want to create more content about frameworks,
-                                    languages such Java, Kotlin and maybe python, I'm working hard to
-                                    accomplish that goal.
+                    <!-- Job 1 -->
+                    <div class="relative z-10 mb-12 transform transition duration-500 hover:scale-[1.02]">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-2 md:order-1">
+                                <h3 class="text-xl font-bold text-slate-900">Software Engineer</h3>
+                                <div class="text-blue-600 font-medium mb-2"><a href="https://www.encora.com/es/" target="_blank">Encora Inc.</a></div>
+                                <p
+                                    class="text-slate-600 text-sm leading-relaxed shadow-sm bg-white p-4 rounded-lg border border-slate-100">
+                                    At Encora I acquire some of my most recent skills such Docker, AWS, Lambdas and more.
+                                    I mainly develop software for a company dedicated to hospitality market, creating new services and introducing some technologies such Apache Kafka, design and build Rest APIs, build new microservices.
                                 </p>
                             </div>
-
+                            <div
+                                class="w-10 h-10 bg-blue-600 rounded-full border-4 border-white shadow-lg flex items-center justify-center absolute left-[-1.25rem] md:left-1/2 md:-ml-5 order-1 md:order-2">
+                                <i class="fas fa-briefcase text-white text-sm"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 order-3">
+                                <span
+                                    class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold">April 2016 - Present</span>
+                            </div>
                         </div>
+                    </div>
 
-
-                        <hr class="divider"/>
-                        <div class="item featured text-center">
-                            <p class="summary">
-                                One of the things that I like the most is to teach
-                                some of the things that I learned, here are some of the slides that
-                                I use for my workshops and talks, if you are interested in take
-                                some, please email me.
-                            </p>
+                     <!-- Job 2 -->
+                    <div class="relative z-10 mb-12 transform transition duration-500 hover:scale-[1.02]">
+                        <div class="flex flex-col md:flex-row items-center">
+                             <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-2">
+                                 <span class="inline-block px-4 py-1.5 rounded-full bg-slate-200 text-slate-700 text-xs font-semibold">March 2020 - Present</span>
+                            </div>
+                            <div
+                                class="w-10 h-10 bg-white border-4 border-blue-600 rounded-full shadow-lg flex items-center justify-center absolute left-[-1.25rem] md:left-1/2 md:-ml-5 order-1 md:order-2">
+                                <i class="fas fa-users text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 order-3 md:order-1">
+                                <h3 class="text-xl font-bold text-slate-900">Co-Founder of JUG Merida</h3>
+                                <div class="text-blue-600 font-medium mb-2"><a href="https://twitter.com/JugMerida" target="_blank">Twitter</a></div>
+                                <p
+                                    class="text-slate-600 text-sm leading-relaxed shadow-sm bg-white p-4 rounded-lg border border-slate-100">
+                                    Along with some friends we decide to start the Java User Group for Merida, Yucat&aacute;n, Mexico.
+                                </p>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="item row">
-                            <a class="col-md-4 col-12"
-                               href="https://docs.google.com/presentation/d/14Qfncpcg1XRrf9WnV6J4imGFIuKGldggl1qS3qAeYBs/edit?usp=sharing"
-                               target="_blank">
-                                <img class="img-fluid project-image"
-                                     src="assets/images/projects/groovy.png"
-                                     alt="Groovy Language Talk"/>
+                    <!-- Job 3 -->
+                    <div class="relative z-10 mb-12 transform transition duration-500 hover:scale-[1.02]">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-2 md:order-1">
+                                <h3 class="text-xl font-bold text-slate-900">Software Engineer</h3>
+                                <div class="text-blue-600 font-medium mb-2"><a href="https://www.mitec.com.mx/en/" target="_blank">MITec</a></div>
+                                <p
+                                    class="text-slate-600 text-sm leading-relaxed shadow-sm bg-white p-4 rounded-lg border border-slate-100">
+                                    Software Engineer where I was working with develop new libraries for payment gateway, I was part of the innovation team where we develop demo products for new platforms.
+                                </p>
+                            </div>
+                            <div
+                                class="w-10 h-10 bg-white border-4 border-blue-600 rounded-full shadow-lg flex items-center justify-center absolute left-[-1.25rem] md:left-1/2 md:-ml-5 order-1 md:order-2">
+                                <i class="fas fa-briefcase text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 order-3">
+                                <span
+                                    class="inline-block px-4 py-1.5 rounded-full bg-slate-200 text-slate-700 text-xs font-semibold">Nov 2014 - Sep 2015</span>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Job 4 -->
+                     <div class="relative z-10 mb-12 transform transition duration-500 hover:scale-[1.02]">
+                        <div class="flex flex-col md:flex-row items-center">
+                             <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-2">
+                                 <span class="inline-block px-4 py-1.5 rounded-full bg-slate-200 text-slate-700 text-xs font-semibold">Jan 2014 - Jul 2015</span>
+                            </div>
+                            <div
+                                class="w-10 h-10 bg-white border-4 border-blue-600 rounded-full shadow-lg flex items-center justify-center absolute left-[-1.25rem] md:left-1/2 md:-ml-5 order-1 md:order-2">
+                                <i class="fas fa-briefcase text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 order-3 md:order-1">
+                                <h3 class="text-xl font-bold text-slate-900">Software Engineer</h3>
+                                <div class="text-blue-600 font-medium mb-2"><a href="https://www.gkhair.com/" target="_blank">Van Tibolli</a></div>
+                                <p
+                                    class="text-slate-600 text-sm leading-relaxed shadow-sm bg-white p-4 rounded-lg border border-slate-100">
+                                    Software Engineer for the company CRM, design and development of the modules Purchases, Item Receive, Bills, Return Authorizations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Job 5 -->
+                    <div class="relative z-10 transform transition duration-500 hover:scale-[1.02]">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-2 md:order-1">
+                                <h3 class="text-xl font-bold text-slate-900">Software Engineer</h3>
+                                <div class="text-blue-600 font-medium mb-2"><a href="http://www.sintelti.com.mx/" target="_blank">SintelTI</a></div>
+                                <p
+                                    class="text-slate-600 text-sm leading-relaxed shadow-sm bg-white p-4 rounded-lg border border-slate-100">
+                                    I've worked in different positions for this company such Analyst, Developer, DevOps, Technical Lead and Project Manager.
+                                </p>
+                            </div>
+                            <div
+                                class="w-10 h-10 bg-white border-4 border-blue-600 rounded-full shadow-lg flex items-center justify-center absolute left-[-1.25rem] md:left-1/2 md:-ml-5 order-1 md:order-2">
+                                <i class="fas fa-briefcase text-blue-600 text-sm"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 order-3">
+                                <span
+                                    class="inline-block px-4 py-1.5 rounded-full bg-slate-200 text-slate-700 text-xs font-semibold">May 2011 - Apr 2016</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">Portfolio</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Github Projects</h2>
+                    <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div
+                        class="group bg-slate-50 p-8 rounded-2xl transition hover:shadow-xl border border-slate-100 hover:border-blue-100 flex flex-col h-full">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Spring Boot with Consul + ELK</h3>
+                        <p class="text-slate-500 text-sm mb-4 flex-grow">
+                             This project has been designed for a workshop where I show how to interact and manage microservices with Spring Boot, HashiCorp Consul and ELK stack.
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-slate-200">
+                             <a href="https://github.com/Joxebus/SpringBootConsultServiceDiscovery" target="_blank"
+                                class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700">
+                                View Project <i class="fab fa-github ml-2 text-xs"></i>
                             </a>
-                            <div class="desc col-md-8 col-12">
-                                <h3 class="title">Groovy: The cool brother of Java</h3>
-                                <p class="mb-2">
-                                    Groovy is a powerful optionally typed and dynamic
-                                    language, with static-typing and static compilation
-                                    capabilities, for the Java platform aimed to improving developer
-                                    productivity thanks to a concise, familiar and easy to learn
-                                    syntax.
-                                </p>
-                                <p>
-                                    <a class="more-link"
-                                       href="https://docs.google.com/presentation/d/14Qfncpcg1XRrf9WnV6J4imGFIuKGldggl1qS3qAeYBs/edit?usp=sharing"
-                                       target="_blank"><i class="fas fa-external-link-alt"></i>Go to
-                                        slides</a>
-                                </p>
-                            </div><!--//desc-->
-                        </div><!--//item-->
+                        </div>
+                    </div>
 
-                        <div class="item row">
-                            <a class="col-md-4 col-12"
-                               href="https://docs.google.com/presentation/d/11RPpmZvr2QewCGVhDUeleTORFQwq6b1udwbarronbFg/edit?usp=sharing"
-                               target="_blank">
-                                <img class="img-fluid project-image"
-                                     src="assets/images/projects/spock.png"
-                                     alt="Spock Framework Talk"/>
+                    <!-- Project 2 -->
+                    <div
+                        class="group bg-slate-50 p-8 rounded-2xl transition hover:shadow-xl border border-slate-100 hover:border-blue-100 flex flex-col h-full">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Microservices Micronaut with Groovy</h3>
+                        <p class="text-slate-500 text-sm mb-4 flex-grow">
+                            This repo contains an example with Micronaut, Groovy and GORM includes the instructions to run it and sample messages.
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-slate-200">
+                             <a href="https://github.com/Joxebus/MicronautGroovy" target="_blank"
+                                class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700">
+                                View Project <i class="fab fa-github ml-2 text-xs"></i>
                             </a>
-                            <div class="desc col-md-8 col-12">
-                                <h3 class="title">Spock Framework: Cause testing should be easy and
-                                    effective...</h3>
-                                <p class="mb-2">
-                                    Spock is a testing and specification framework for
-                                    Java and Groovy applications, as simple as that.
-                                </p>
-                                <p>
-                                    <a class="more-link"
-                                       href="https://docs.google.com/presentation/d/11RPpmZvr2QewCGVhDUeleTORFQwq6b1udwbarronbFg/edit?usp=sharing"
-                                       target="_blank"><i class="fas fa-external-link-alt"></i>Go to
-                                        slides</a>
-                                </p>
-                            </div><!--//desc-->
-                        </div><!--//item-->
+                        </div>
+                    </div>
 
-                        <div class="item row">
-                            <a class="col-md-4 col-12"
-                               href="https://docs.google.com/presentation/d/134adaNJbxf2ZBpg4m9c5X3IOICPyfogNezOfsWaXJsw/edit?usp=sharing"
-                               target="_blank">
-                                <img class="img-fluid project-image"
-                                     src="assets/images/projects/micronaut.png"
-                                     alt="Micronaut Talk"/>
+                     <!-- Project 3 -->
+                    <div
+                        class="group bg-slate-50 p-8 rounded-2xl transition hover:shadow-xl border border-slate-100 hover:border-blue-100 flex flex-col h-full">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Groovy Workshop Samples</h3>
+                        <p class="text-slate-500 text-sm mb-4 flex-grow">
+                            Code samples to practice Groovy, the project contains different branches with different samples for a workshop.
+                        </p>
+                         <div class="mt-4 pt-4 border-t border-slate-200">
+                             <a href="https://github.com/Joxebus/GroovyWorkshopExamples" target="_blank"
+                                class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700">
+                                View Project <i class="fab fa-github ml-2 text-xs"></i>
                             </a>
-                            <div class="desc col-md-8 col-12">
-                                <h3 class="title">Building Microservices with Micronaut: Less is
-                                    more</h3>
-                                <p class="mb-2">
-                                    A modern, JVM-based, full-stack framework for
-                                    building modular, easily testable microservice and serverless
-                                    applications.
-                                </p>
-                                <p>
-                                    <a class="more-link"
-                                       href="https://docs.google.com/presentation/d/134adaNJbxf2ZBpg4m9c5X3IOICPyfogNezOfsWaXJsw/edit?usp=sharing"
-                                       target="_blank"><i class="fas fa-external-link-alt"></i>Go to
-                                        slides</a>
-                                </p>
-                            </div><!--//desc-->
-                        </div><!--//item-->
+                        </div>
+                    </div>
 
-                        <div class="item row">
-                            <a class="col-md-4 col-12"
-                               href="https://docs.google.com/presentation/d/134adaNJbxf2ZBpg4m9c5X3IOICPyfogNezOfsWaXJsw/edit?usp=sharing"
-                               target="_blank">
-                                <img class="img-fluid project-image"
-                                     src="assets/images/projects/code_4_humans.png"
-                                     alt="Micronaut Talk"/>
+                     <!-- Project 4 -->
+                    <div
+                        class="group bg-slate-50 p-8 rounded-2xl transition hover:shadow-xl border border-slate-100 hover:border-blue-100 flex flex-col h-full">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Spock Framework Template</h3>
+                        <p class="text-slate-500 text-sm mb-4 flex-grow">
+                             This is a template project to start working with Spock, you can practice different this here, I also included a Spring Boot sample.
+                        </p>
+                         <div class="mt-4 pt-4 border-t border-slate-200">
+                             <a href="https://github.com/Joxebus/SpockTemplate" target="_blank"
+                                class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700">
+                                View Project <i class="fab fa-github ml-2 text-xs"></i>
                             </a>
-                            <div class="desc col-md-8 col-12">
-                                <h3 class="title">Code 4 Humans: Take care of your little
-                                    monster</h3>
-                                <p class="mb-2">
-                                    This is a clean code talk where show my own
-                                    experiences and give some advises about how I deal with code
-                                    situations, I think this the talk that I like the most so
-                                    far.
-                                </p>
-                                <p>
-                                    <a class="more-link"
-                                       href="https://docs.google.com/presentation/d/134adaNJbxf2ZBpg4m9c5X3IOICPyfogNezOfsWaXJsw/edit?usp=sharing"
-                                       target="_blank"><i class="fas fa-external-link-alt"></i>Go to
-                                        slides</a>
-                                </p>
-                            </div><!--//desc-->
-                        </div><!--//item-->
+                        </div>
+                    </div>
 
-                    </div><!--//content-->
-                </div><!--//section-inner-->
-            </section><!--//section-->
+                     <!-- Project 5 -->
+                    <div
+                        class="group bg-slate-50 p-8 rounded-2xl transition hover:shadow-xl border border-slate-100 hover:border-blue-100 flex flex-col h-full">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Java samples for beginners</h3>
+                        <p class="text-slate-500 text-sm mb-4 flex-grow">
+                             Java samples that I used during teaching classes, updated to use some Java 8 features.
+                        </p>
+                         <div class="mt-4 pt-4 border-t border-slate-200">
+                             <a href="https://github.com/Joxebus/AcademiaJava" target="_blank"
+                                class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700">
+                                View Project <i class="fab fa-github ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
 
-            <section class="projects section">
-                <div class="section-inner">
-                    <h2 class="heading">Github Projects</h2>
-                    <div class="content">
-                        <div class="item">
-                            <h3 class="title">
-                                <a href="https://github.com/Joxebus/SpringBootConsultServiceDiscovery"
-                                   target="_blank">Spring Boot with Consul + ELK</a>
-                                <span class="badge badge-theme">Free</span>
-                            </h3>
-                            <p class="summary">
-                                This project has been designed for a workshop where I
-                                show how to interact and manage microservices with Spring Boot,
-                                HashiCorp Consul and ELK stack, it contains some branches where you
-                                can set up everything with Docker.
-                            </p>
-                            <p>
-                                <a class="more-link"
-                                   href="https://github.com/Joxebus/SpringBootConsultServiceDiscovery/archive/master.zip"
-                                   target="_blank"><i class="fas fa-external-link-alt"></i>Download
-                                    Now</a>
-                            </p>
-                        </div><!--//item-->
+                </div>
+            </div>
+        </section>
 
-                        <div class="item">
-                            <h3 class="title">
-                                <a href="https://github.com/Joxebus/MicronautGroovy"
-                                   target="_blank">Microservices Micronaut with Groovy</a>
-                                <span class="badge badge-theme">Free</span>
-                            </h3>
-                            <p class="summary">This repo contains an example with Micronaut, Groovy
-                                and GORM includes the instructions to run it and sample messages
-                                that you can use to test with your preferred http tester, I suggest
-                                Postman, but you can do also a simple curl action.</p>
-                            <p>I found something that could be a bug and I reported it for the first
-                                version of Micronuat but not sure if the recent version already
-                                fixed, for more you can take a look to the branch <b>issue-client-at-test-dir</b>
-                            </p>
-                            <p><a class="more-link"
-                                  href="https://github.com/Joxebus/MicronautGroovy/archive/master.zip"
-                                  target="_blank"><i class="fas fa-external-link-alt"></i>Download
-                                Now</a></p>
-                        </div><!--//item-->
+        <!-- Content Section -->
+         <section id="content" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">Media</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Latest Content</h2>
+                    <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+                </div>
 
-                        <div class="item">
-                            <h3 class="title"><a
-                                    href="https://github.com/Joxebus/GroovyWorkshopExamples"
-                                    target="_blank">Groovy Workshop Samples</a> <span
-                                    class="badge badge-theme">Free</span></h3>
-                            <p class="summary">
-                                Along with the slides mentioned in the previous
-                                section here is the code samples to practice Groovy, the project
-                                contains different branches with different samples for a workshop
-                                where the user should complete the exercises.</p>
-                            <p>
-                                <a class="more-link"
-                                   href="https://github.com/Joxebus/GroovyWorkshopExamples/archive/master.zip"
-                                   target="_blank"><i class="fas fa-external-link-alt"></i>Download
-                                    Now</a>
-                            </p>
-                        </div><!--//item-->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                     <!-- Youtube -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                        <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                            <i class="fab fa-youtube text-red-600 mr-2"></i> YouTube Channel
+                        </h3>
+                         <div id="latest-youtube-video" class="aspect-w-16 aspect-h-9"></div>
+                         <div id="rss-feeds-youtube" class="mt-4 space-y-4"></div>
+                    </div>
 
-                        <div class="item">
-                            <h3 class="title">
-                                <a href="https://github.com/Joxebus/SpockTemplate"
-                                   target="_blank">Spock Framework Template</a>
-                                <span class="badge badge-theme">Free</span>
-                            </h3>
-                            <p class="summary">
-                                This is a template project to start working with
-                                Spock, you can practice different this here, I also included a
-                                Spring Boot sample to do some tests with something more real.
-                            </p>
-                            <p>
-                                <a class="more-link"
-                                   href="https://github.com/Joxebus/SpockTemplate/archive/master.zip"
-                                   target="_blank"><i class="fas fa-external-link-alt"></i>Download
-                                    Now</a>
-                            </p>
-                        </div><!--//item-->
+                    <!-- Blogs -->
+                     <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                        <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                            <i class="fas fa-rss text-orange-500 mr-2"></i> Latest Blog Posts
+                        </h3>
+                         <div id="rss-feeds-blog-github" class="space-y-4 mb-4"></div>
+                         <div id="rss-feeds-blog" class="space-y-4"></div>
+                         <div id="rss-feeds-medium" class="space-y-4 mt-4"></div>
+                    </div>
+                </div>
+            </div>
+         </section>
 
+        <!-- Footer -->
+        <footer class="bg-white border-t py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-slate-500 text-sm">
+                    &copy; 2024 Omar Bautista. All rights reserved.
+                </div>
+                 <div class="flex items-center space-x-2 text-sm text-slate-500">
+                     <i class="fas fa-language"></i>
+                     <div id="google_translate_element"></div>
+                 </div>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="https://github.com/Joxebus" target="_blank" class="text-slate-400 hover:text-primary transition-colors">
+                        <span class="sr-only">GitHub</span>
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/joxebus/" target="_blank" class="text-slate-400 hover:text-primary transition-colors">
+                        <span class="sr-only">LinkedIn</span>
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://twitter.com/Joxebus" target="_blank" class="text-slate-400 hover:text-primary transition-colors">
+                        <span class="sr-only">Twitter</span>
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
 
-                        <div class="item">
-                            <h3 class="title">
-                                <a href="https://github.com/Joxebus/AcademiaJava"
-                                   target="_blank">Java samples for beginners</a>
-                                <span class="badge badge-theme">Free</span>
-                            </h3>
-                            <p class="summary">
-                                On 2012 I was teaching Java 6 to a group of people at
-                                Everis Mexico, so I started this old repo with the samples that I
-                                used during the classes, I learned a lot since then so I will
-                                update this repo to use some Java 8 features and maybe include
-                                some branches for the new releases, but something that I have clear
-                                is that will not be easy, and it will take a lot of time.
-                            </p>
-                            <p>
-                                <a class="more-link"
-                                   href="https://github.com/Joxebus/AcademiaJava/archive/master.zip"
-                                   target="_blank"><i class="fas fa-external-link-alt"></i>Download
-                                    Now</a>
-                            </p>
-                        </div><!--//item-->
+        <!-- Back to Top Button -->
+        <button id="backToTop"
+            class="fixed bottom-8 right-8 bg-blue-600 text-white p-4 rounded-full shadow-lg transform translate-y-20 opacity-0 transition-all duration-300 hover:bg-blue-700 focus:outline-none z-50">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 
-
-                        <a class="btn btn-cta-secondary"
-                           href="https://github.com/Joxebus?tab=repositories" target="_blank">
-                            More<i class="fas fa-chevron-right"></i>
-                        </a>
-
-                    </div><!--//content-->
-                </div><!--//section-inner-->
-            </section><!--//section-->
-
-            <section class="experience section">
-                <div class="section-inner">
-                    <h2 class="heading">Work Experience</h2>
-                    <div class="content">
-                        <div class="item">
-                            <h3 class="title">Co-Founder of JUG Merida - <span class="place"><a
-                                    href="https://twitter.com/JugMerida">Twitter</a></span> <span
-                                    class="year">(March 2020 - Present)</span></h3>
-                            <p>
-                                Along with some friends we decide to start the Java User Group for
-                                Merida, Yucat&aacute;n, Mexico.
-                            </p>
-                        </div><!--//item-->
-                        <div class="item">
-                            <h3 class="title">Software Engineer - <span class="place"><a
-                                    href="https://www.encora.com/es/">Encora Inc.</a></span>
-                                <span class="year">(April 2016 - present)</span></h3>
-                            <p>
-                                At Encora I acquire some of my most recent skills such Docker,
-                                AWS, Lambdas and more.
-                            </p>
-                            <p>
-                                I mainly develop software for a company dedicated to hospitality
-                                market, creating new services and introducing some technologies such
-                                Apache Kafka, design and build Rest APIs,
-                                build new microservices, I was working closely in the migration from
-                                the principal monolith into a hybrid with microservices for some of
-                                the most on demand features.
-                            </p>
-                            <p>
-                                On my free time I give some talks and workshops, I actively
-                                participate in the Java School as mentor and some other initiatives
-                                where we try to be more close to the community.
-                            </p>
-                        </div><!--//item-->
-
-                        <div class="item">
-                            <h3 class="title">Software Engineer - <span class="place"><a
-                                    href="https://www.gkhair.com/">Van Tibolli</a></span> <span
-                                    class="year">(January 2014 - July 2015)</span></h3>
-                            <p>
-                                Software Engineer for the company CRM, design and development of the
-                                modules Purchases, Item Receive, Bills, Return Authorizations and
-                                pending to delete, where I develop a generic module to include
-                                information into the database to avoid actually delete the
-                                information and lost the history.
-                            </p>
-                        </div><!--//item-->
-
-                        <div class="item">
-                            <h3 class="title">Software Engineer - <span class="place"><a
-                                    href="https://www.mitec.com.mx/en/">MITec Mercadotecnia Ideas y Tecnologia</a></span>
-                                <span class="year">(November 2014 - September 2015)</span></h3>
-                            <p>
-                                Software Engineer where I was working with develop new libraries for
-                                payment gateway, I was part of the innovation team where we develop
-                                demo products for new platforms.
-                            </p>
-                        </div><!--//item-->
-
-                        <div class="item">
-                            <h3 class="title">Software Engineer - <span class="place"><a
-                                    href="http://www.sintelti.com.mx/">SintelTI</a></span> <span
-                                    class="year">(May 2011 - April 2016)</span></h3>
-                            <p>
-                                I've worked in different positions for this company such Analyst,
-                                Developer, DevOps, Technical Lead and Project Manager in the last
-                                project.
-                            </p>
-                        </div><!--//item-->
-
-                    </div><!--//content-->
-                </div><!--//section-inner-->
-            </section><!--//section-->
-            <section class="github section">
-                <div class="section-inner">
-                    <h2 class="heading">My GitHub</h2>
-                    <p>
-                        When I have time I work on my GitHub projects, but recently I was a little
-                        busy, here is my recent activity.
-                    </p>
-                    <!--                    <div id="github-graph" class="github-graph"> </div>&lt;!&ndash;//github-graph&ndash;&gt;-->
-                    <div id="ghfeed" class="ghfeed"></div><!--//ghfeed-->
-
-                </div><!--//secton-inner-->
-            </section><!--//section-->
-        </div><!--//primary-->
-        <div class="secondary col-lg-4 col-12">
-            <aside class="info aside section">
-                <div class="section-inner">
-                    <h2 class="heading sr-only">Basic Information</h2>
-                    <div class="content">
-                        <ul class="list-unstyled">
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span class="sr-only">Location:</span>Mexico
-                            </li>
-                            <li>
-                                <i class="fas fa-link"></i>
-                                <span class="sr-only">Github:</span>
-                                <a href="#">https://github.com/Joxebus</a></li>
-                            <li>
-                                <i class="fas fa-language"></i>
-                                <div id="google_translate_element"></div>
-                            </li>
-                        </ul>
-                    </div><!--//content-->
-                </div><!--//section-inner-->
-            </aside><!--//aside-->
-
-            <aside class="languages aside section">
-                <div class="section-inner">
-                    <h2 class="heading">Languages</h2>
-                    <div class="content">
-                        <ul class="list-unstyled">
-                            <li class="item">
-                                <span class="title"><strong>Spanish:</strong></span>
-                                <span class="level">Native Speaker <br class="visible-xs"/>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                            </li><!--//item-->
-                            <li class="item">
-                                <span class="title"><strong>English:</strong></span>
-                                <span class="level">B2 <br class="visible-sm visible-xs"/>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half"></i>
-                                </span>
-                            </li><!--//item-->
-                        </ul>
-                    </div><!--//content-->
-                </div><!--//section-inner-->
-            </aside><!--//section-->
-
-
-
-            <aside class="blog aside section"> <!-- Latest Blog Posts -->
-                <div class="section-inner">
-                    <h2 class="heading">Latest Blog Posts</h2>
-                    <p>
-                        I like to write about technology, so you can follow my blogs, some articles
-                        are in spanish and some others in english.
-                    </p>
-                    <div id="rss-feeds-blog-github" class="content"></div><!--//content-->
-                    <br/>
-                    <div id="rss-feeds-blog" class="content"></div><!--//content-->
-                    <br/>
-                    <div id="rss-feeds-medium" class="content"></div><!--//content-->
-                </div><!--//section-inner-->
-            </aside><!--//section-->
-
-            <aside class="blog aside section"> <!-- Latest Videos -->
-                <div class="section-inner">
-                    <h2 class="heading">Latest Videos</h2>
-                    <p>
-                        Sometimes I like to create some videos to explain something related to
-                        software development
-                        <a href="https://www.youtube.com/user/Joxebus/videos?view_as=subscriber"
-                           target="_blank">click here</a> to see my YouTube Channel.
-                    </p>
-                    <div id="rss-feeds-youtube" class="content">
-
-                    </div><!--//content-->
-                </div><!--//section-inner-->
-            </aside><!--//section-->
-
-
-        </div><!--//secondary-->
-    </div><!--//row-->
-</div><!--//masonry-->
-
-<!-- ******FOOTER****** -->
-<footer class="footer">
-    <div class="container text-center">
-        <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-        <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
-                href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for
-            developers</small>
-    </div><!--//container-->
-</footer><!--//footer-->
-
-<!-- Javascript -->
-<script type="text/javascript" src="assets/plugins/jquery-3.5.0.min.js"></script>
-<script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- custom js -->
-<script type="text/javascript" src="assets/js/main.js"></script>
-
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+        
+        <!-- Initialize RSS Feeds -->
+        <script src="assets/js/main.js"></script>
 
 </body>
-</html> 
 
+</html>
