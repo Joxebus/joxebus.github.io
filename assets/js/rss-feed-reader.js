@@ -27,30 +27,43 @@ class RSS {
         let entries = ''
         for (let i in items) {
             const entry = items[i];
-            entries += this.entryOptions.entryTemplate.replace('{link}', entry.link)
-                .replace('{title}', entry.title)
-                .replace('{published}', entry.pubDate)
-                .replace('{description}', entry.description)
-                .replace('{thumbnail}', entry.thumbnail)
+            let templ = this.entryOptions.entryTemplate;
+            templ = templ.replace(/{link}/g, entry.link)
+                .replace(/{title}/g, entry.title)
+                .replace(/{published}/g, entry.pubDate)
+                .replace(/{description}/g, entry.description)
+                .replace(/{thumbnail}/g, entry.thumbnail);
+            entries += templ;
         }
 
         return this.entryOptions.layoutTemplate.replace('{entries}', entries)
     }
 
     htmlNewVideo(entry) {
-        let videoId = entry.guid.split(":")[2];
-        // Fallback: extract from link if guid split failed or returned URL-like string
-        if (!videoId || videoId.includes('/') || videoId.length < 5) {
+        let videoId = null;
+        // Try extracting from guid if it matches yt:video:ID format
+        if (entry.guid && entry.guid.startsWith('yt:video:')) {
+            videoId = entry.guid.split(':')[2];
+        }
+
+        // Fallback: match v=ID in the link
+        if (!videoId && entry.link) {
             const match = entry.link.match(/[?&]v=([^&]+)/);
             if (match) {
                 videoId = match[1];
-            } else {
-                // Last resort: try to extract from the end of the link if it's a short link
-                const parts = entry.link.split('/');
-                videoId = parts[parts.length - 1];
             }
         }
-        const entries = this.entryOptions.entryTemplate.replace('{guid}', videoId)
+
+        // If still no ID, try last segment of URL (for short links)
+        if (!videoId && entry.link) {
+            const parts = entry.link.split('/');
+            videoId = parts[parts.length - 1];
+        }
+
+        // Final fallback/safeguard
+        if (!videoId) videoId = '';
+
+        const entries = this.entryOptions.entryTemplate.replace(/{guid}/g, videoId)
         return this.entryOptions.layoutTemplate.replace('{entries}', entries)
     }
 
