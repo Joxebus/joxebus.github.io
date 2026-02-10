@@ -1,22 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     // Main YouTube Video
     new RSS('https://www.youtube.com/feeds/videos.xml?channel_id=UCZlRK9pPpcFBZSNpKlaOXqg',
-            "latest-youtube-video",
-            new EntryOptions(
-                1,
-                '{entries}',
-                '<iframe class="w-full h-full rounded-xl shadow-lg aspect-video" src="https://www.youtube.com/embed/{guid}" allow="encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-                true
-            )).renderEntries();
+        "latest-youtube-video",
+        new EntryOptions(
+            1,
+            '<div class="relative w-full pb-[56.25%] h-0 rounded-xl overflow-hidden shadow-lg bg-black">{entries}</div>',
+            '<iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/{guid}" allow="encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            true
+        )).renderEntries();
 
     // Blog Feeds (GitHub Pages)
     new RSS('https://joxebus.github.io/blog/feed.xml',
-            "rss-feeds-blog-github",
-            new EntryOptions(
-                3,
-                "{entries}",
-                `<div class="flex flex-col border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+        "rss-feeds-blog-github",
+        new EntryOptions(
+            3,
+            "{entries}",
+            `<div class="flex flex-col border-b border-slate-100 pb-4 last:border-0 last:pb-0">
                     <h4 class="font-bold text-slate-800 hover:text-blue-600 transition-colors">
                         <a href="{link}" target="_blank">{title}</a>
                     </h4>
@@ -26,15 +26,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         </a>
                     </div>
                 </div>`
-            )).renderEntries();
+        )).renderEntries();
 
     // Blog Feeds (WordPress)
     new RSS('https://groovylopeando.wordpress.com/feed/',
-            "rss-feeds-blog",
-            new EntryOptions(
-                3,
-                "{entries}",
-                `<div class="flex flex-col border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+        "rss-feeds-blog",
+        new EntryOptions(
+            3,
+            "{entries}",
+            `<div class="flex flex-col border-b border-slate-100 pb-4 last:border-0 last:pb-0">
                     <h4 class="font-bold text-slate-800 hover:text-blue-600 transition-colors">
                         <a href="{link}" target="_blank">{title}</a>
                     </h4>
@@ -45,15 +45,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         </a>
                     </div>
                 </div>`
-            )).renderEntries();
+        )).renderEntries();
 
     // Medium Feeds
     new RSS('https://medium.com/feed/@joxebus',
-            "rss-feeds-medium",
-            new EntryOptions(
-                3,
-                "{entries}",
-                `<div class="flex flex-col border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+        "rss-feeds-medium",
+        new EntryOptions(
+            3,
+            "{entries}",
+            `<div class="flex flex-col border-b border-slate-100 pb-4 last:border-0 last:pb-0">
                     <h4 class="font-bold text-slate-800 hover:text-blue-600 transition-colors">
                         <a href="{link}" target="_blank">{title}</a>
                     </h4>
@@ -63,15 +63,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         </a>
                     </div>
                 </div>`
-            )).renderEntries();
+        )).renderEntries();
 
     // YouTube List
     new RSS('https://www.youtube.com/feeds/videos.xml?channel_id=UCZlRK9pPpcFBZSNpKlaOXqg',
-            "rss-feeds-youtube",
-            new EntryOptions(
-                5,
-                "{entries}",
-                `<div class="flex items-start space-x-4 border-b border-slate-100 pb-4 last:border-0 last:pb-0 pt-4 first:pt-0">
+        "rss-feeds-youtube",
+        new EntryOptions(
+            5,
+            "{entries}",
+            `<div class="flex items-start space-x-4 border-b border-slate-100 pb-4 last:border-0 last:pb-0 pt-4 first:pt-0">
                     <div class="flex-shrink-0 w-24">
                         <img class="w-full rounded shadow-sm hover:opacity-80 transition-opacity" src="{thumbnail}" alt="{title}"/>
                     </div>
@@ -84,12 +84,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         </a>
                     </div>
                 </div>`
-            )).renderEntries();
+        )).renderEntries();
 
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
     // Ensure selector exists before running
-    if(document.getElementById('ghfeed')) {
-        GitHubActivity.feed({username: "Joxebus", selector: "#ghfeed", limit: 10 });
+    if (document.getElementById('ghfeed')) {
+        GitHubActivity.feed({ username: "Joxebus", selector: "#ghfeed", limit: 10 });
     }
 
 });
